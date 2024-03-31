@@ -2,7 +2,7 @@
 
 ### Install K3s and Initiate a Cluster
 ``` bash
-curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.27.10+k3s2 sh -s - server --etcd-expose-metrics true --cluster-domain rancher-cluster.local --system-default-registry docker.k8s.fwupakistan.com --node-name master0 --cluster-init
+curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=v1.27.10+k3s2 sh -s - server --etcd-expose-metrics true --cluster-domain rancher-cluster.local --node-name master0 --cluster-init
 ```
 
 ### Installing HELM for Later Use
