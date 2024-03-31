@@ -67,3 +67,9 @@ If there is `bad gateway` message while trying to reach rancher, please consider
 systemctl stop firewalld.service
 systemctl disable firewalld
 ```
+
+### Kubectl Command not Found
+K3s comes with kubectl built-in, not being able to use it as a command can be because of kubectl not added to PATH. Please run the following command:
+``` bash
+export PATH=$PATH:/usr/local/bin   # Adjust the path if needed
+```
